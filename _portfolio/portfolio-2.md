@@ -35,18 +35,9 @@ The final model used is an ensemble of different classifiers such as:
 * Following is confusion matrix of final classifier (stack ensemble) and xgboost classifier.
 
 
-<img src = "https://github.com/d0r1h/Churn-Analysis/blob/main/static/stackclf.png" width = 300> <img src = "https://github.com/d0r1h/Churn-Analysis/blob/main/static/xgb.png" width = 300>
-
-* Score table for different classifier
-
-<figure>
-<img src = "https://github.com/d0r1h/Churn-Analysis/blob/main/static/churn_score.png" width = 350>
-<figcaption align = "center"></figcaption>
-</figure>
-
-
 ### Techstack
 - Python version: 3.7
 - Packages: pandas, numpy, sklearn, xgboost, fastapi, seaborn
 - Cloud: heroku
 
+`For result matrices and code notebooks checkout github repository of this project.`
