@@ -1,6 +1,6 @@
 ---
 title: "Customer Churn Analysis"
-excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width="900">"
+excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width="400">"
 collection: portfolio
 ---
 
@@ -27,7 +27,7 @@ The final model used is an ensemble of different classifiers such as:
 * Xgboost
 
 ### Techstack
-**Python version**: 3.7 </br>
-**Packages**: pandas, numpy, sklearn, xgboost, fastapi, seaborn</br>
-**Cloud**: heroku
+- Python version: 3.7 </br>
+- Packages: pandas, numpy, sklearn, xgboost, fastapi, seaborn</br>
+- Cloud: heroku
 
