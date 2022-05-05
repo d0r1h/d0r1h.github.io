@@ -1,8 +1,10 @@
 ---
 title: "Customer Churn Analysis"
-excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width='500'>"
+excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width='800'>"
 collection: portfolio
 ---
+
+[GitHub](https://github.com/d0r1h/Churn-Analysis) | [Demo App](https://churn01.herokuapp.com/)
 
 Churn prediction, or the task of identifying customers who are likely to discontinue use of a service, is an important and lucrative concern of any industry.
 
