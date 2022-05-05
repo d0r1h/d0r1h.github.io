@@ -1,10 +1,5 @@
----
-title: 'Journey to Stay Safe in the Digital Age V.1'
-excerpt: "<img src='/images/blog1.jpeg'>"
-date: 2020-08-18
-permalink: /Project/2020/08/project1/
-tags:
-  - internet
-  - security
-  - privacy
+----
+title: "project item number 1"
+excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+collection: Projects
 ---
