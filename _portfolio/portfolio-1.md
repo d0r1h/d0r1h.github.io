@@ -1,6 +1,6 @@
 ---
 title: "Hindi News Summarizer"
-excerpt: "State-of-the-art Summarization methods for Hindi in 🤗 <br/><img src='https://github.com/d0r1h/SAR/blob/main/assets/SAR.png'>"
+excerpt: "State-of-the-art Summarization methods for Hindi in 🤗 <br/><img src='images/SAR.png'>"
 collection: portfolio
 ---
 
