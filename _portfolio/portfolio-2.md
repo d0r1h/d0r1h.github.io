@@ -1,6 +1,6 @@
 ---
 title: "Customer Churn Analysis"
-excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width="400">"
+excerpt: "This project aims to identify customers who are likely to leave so that we can retain them with certain incentives.<br/><img src='/images/churn.png' width='500'>"
 collection: portfolio
 ---
 
