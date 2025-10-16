@@ -11,7 +11,7 @@ redirect_from:
 
  Data Scientist with 3 years of experience in retail analytics, specializing in machine learning and NLP to drive scalable, data-driven business solutions. Skilled in SQL, PySpark, Python (Pandas), and PyTorch, with hands-on experience in designing, deploying, and optimizing ML models for large-scale data processing and decision support.
 
- My research background in NLP, includes project on legal domain document summarization at [SCAAI](https://scaai.edu.in/) with guidence of [DR. Shila Gite](https://scholar.google.co.in/citations?user=VKolPrMAAAAJ&hl=en) and co-authored paper titled :  [Indian Legal Corpus (ILC): A Dataset for A Dataset Summarizing Indian Legal Proceeding Using Natural Language](https://www.espublisher.com/journals/articledetails/1022).
+ My research background in NLP, includes project on legal domain, summarization of long document at [SCAAI](https://scaai.edu.in/) under guidence of [DR. Shila Gite](https://scholar.google.co.in/citations?user=VKolPrMAAAAJ&hl=en) and authored paper titled :  [Indian Legal Corpus (ILC): A Dataset for A Dataset Summarizing Indian Legal Proceeding Using Natural Language](https://www.espublisher.com/journals/articledetails/1022).
 
 I graduated with  Master of Technology (M.Tech) degree in Data Science and Machine Learning at [PES University](https://pes.edu/) in 2022. I have earned my Bachelor's degree in Information technology from [SRM University](https://www.srmist.edu.in) in 2019. I am currently based in Bengaluru, India. 
 
