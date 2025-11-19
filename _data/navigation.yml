@@ -1,5 +1,11 @@
 # main links links
 main:
+  - title: "Experience"
+    url: /experience/
+
+  - title: "Skills"
+    url: /skills/
+
   - title: "Projects"
     url: /portfolio/
 
@@ -17,3 +23,4 @@ main:
     
 #   - title: "Guide"
 #     url: /markdown/
+
