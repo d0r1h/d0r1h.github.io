@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legal Corpus (ILC) - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #3b82f6;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+            font-weight: 400;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .code-block {
+            background: #1a1a1a;
+            color: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .links-section {
+            display: flex;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #fff;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1.5px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+
+        .highlight-box {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+            <h1 class="project-title">Indian Legal Corpus (ILC)</h1>
+            <p class="project-subtitle">A Dataset for Summarizing Indian Legal Proceedings</p>
+            <div class="project-tags">
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">Legal AI</span>
+                <span class="project-tag">Dataset</span>
+                <span class="project-tag">Research</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <a href="https://github.com/d0r1h/ILC" target="_blank" class="link-button">
+                <span>📂</span> GitHub
+            </a>
+            <a href="https://huggingface.co/datasets/d0r1h/ILC" target="_blank" class="link-button">
+                <span>🤗</span> Dataset
+            </a>
+            <a href="https://huggingface.co/d0r1h/led-base-ilc" target="_blank" class="link-button">
+                <span>🤖</span> Model
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="section-content">
+                <p>Indian Legal Corpus (ILC) is a curated dataset of 3,000+ Indian legal judgments and their parallel
+                    summaries. This dataset addresses the gap in resources for legal NLP research in the Indian context.
+                </p>
+                <div class="highlight-box">
+                    <p><strong>Published Research:</strong> "Indian Legal Corpus (ILC): A Dataset for Summarizing Indian
+                        Legal Proceedings Using Natural Language"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Dataset</h2>
+            <div class="section-content">
+                <p>We have scraped and compiled a corpus of 3k+ Indian legal judgments and their parallel summaries.</p>
+                <p><strong>Loading the dataset:</strong></p>
+                <div class="code-block">
+                    <code><span style="color: #569cd6;">from</span> datasets <span style="color: #569cd6;">import</span> load_dataset<br>
+                          <span style="color: #569cd6;">import</span> pandas <span style="color: #569cd6;">as</span> pd<br>
+                            dataset = load_dataset(<span style="color: #ce9178;">"d0r1h/ILC"</span>)<br>
+                            train_set = pd.DataFrame(dataset[<span style="color: #ce9178;">'train'</span>])<br>
+                            test_set = pd.DataFrame(dataset[<span style="color: #ce9178;">'test'</span>])</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Installation & Usage</h2>
+            <div class="section-content">
+                <p><strong>Clone and setup:</strong></p>
+                <div class="code-block">
+                    <code>git clone https://github.com/d0r1h/ILC.git<br>
+                          cd ILC<br>
+                          pip install -r requirement.txt</code>
+                </div>
+
+                <p><strong>Extractive Summarization:</strong></p>
+                <div class="code-block">
+                    <code><span style="color: #4ec9b0;">python</span> Code/Models/extractive.py \<br>
+                            --output_dir dir_name \<br>
+                            --text_column text \<br>
+                            --summary_column summary \<br>
+                            --data_file data.csv \<br>
+                            --sentence_count <span style="color: #b5cea8;">3</span></code>
+                </div>
+
+                <p><strong>Training LED (Abstractive):</p>
+                <div class="code-block">
+                    <code><span style="color: #4ec9b0;">python</span> Code/Models/led_summarization.py \<br>
+                            --model_name allenai/led-base-<span style="color: #b5cea8;">16384</span> \<br>
+                            --text_column Case \<br>
+                            --summary_column Summary \<br>
+                            --max_input_length <span style="color: #b5cea8;">8192</span> \<br>
+                            --max_output_length <span style="color: #b5cea8;">600</span> \<br>
+                            --batch_size <span style="color: #b5cea8;">2</span> \<br>
+                            --num_beams <span style="color: #b5cea8;">2</span> \<br>
+                            --output_dir output_dir_name</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Pre-trained Model</h2>
+            <div class="section-content">
+                <p>We provide a fine-tuned LED model for Indian legal document summarization:</p>
+                <ul>
+                    <li><strong>Model:</strong> <a href="https://huggingface.co/d0r1h/led-base-ilc"
+                            target="_blank">led-base-ilc</a> on Hugging Face</li>
+                    <li><strong>Base:</strong> allenai/led-base-16384</li>
+                    <li><strong>Training:</strong> Fine-tuned on ILC dataset</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Results</h2>
+            <div class="section-content">
+                <p>Comprehensive evaluation on test-set with transformer-based models and extractive methods. The
+                    dataset enables research on legal document summarization specific to Indian legal proceedings.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

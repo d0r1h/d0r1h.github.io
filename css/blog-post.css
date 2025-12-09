@@ -1,0 +1,249 @@
+/* Common Styles for Blog Posts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: #3b82f6;
+}
+
+.blog-header {
+    margin-bottom: 3rem;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.blog-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.blog-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.blog-tag {
+    background: #f0f0f0;
+    color: #555;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.blog-tag:hover {
+    background: #e0e0e0;
+}
+
+.blog-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem 0;
+    color: #1a1a1a;
+}
+
+.blog-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #1a1a1a;
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+}
+
+.medium-link {
+    background: #f5f5f5;
+    border-left: 4px solid #3b82f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.medium-link p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.medium-link a {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.medium-link a:hover {
+    transform: translateY(-2px);
+}
+
+.share-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.share-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.share-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.share-button.twitter {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+.share-button.facebook {
+    background: #1877F2;
+    color: #fff;
+}
+
+.share-button.linkedin {
+    background: #0A66C2;
+    color: #fff;
+}
+
+.share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recommendations {
+    margin-top: 4rem;
+}
+
+.recommendations-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.recommendations-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.recommendation-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s;
+}
+
+.recommendation-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.recommendation-excerpt {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2rem;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+    }
+
+    .share-button {
+        justify-content: center;
+    }
+}

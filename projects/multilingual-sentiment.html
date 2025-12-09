@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Sentiment Analysis - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #3b82f6;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .perf-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .perf-table th,
+        .perf-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .perf-table th {
+            background: #f5f5f5;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .perf-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .links-section {
+            display: flex;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #fff;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1.5px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+            <h1 class="project-title">Multilingual Sentiment Analysis</h1>
+            <p class="project-subtitle">NLP system for sentiment analysis across English and Hindi</p>
+            <div class="project-tags">
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">Multilingual</span>
+                <span class="project-tag">Transformers</span>
+                <span class="project-tag">Hugging Face</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <a href="https://huggingface.co/d0r1h" target="_blank" class="link-button">
+                <span>🤗</span> Hugging Face
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="section-content">
+                <p>Developed a multilingual sentiment analysis system capable of processing customer feedback in both
+                    English and Hindi. The system analyzes product reviews, social media comments, and customer support
+                    tickets to extract actionable insights.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Motivation</h2>
+            <div class="section-content">
+                <p>With India's diverse linguistic landscape, analyzing customer sentiment in regional languages is
+                    crucial for understanding customer needs. This project addresses the gap in Hindi sentiment analysis
+                    tools.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Data Collection</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Scraped and curated 50,000+ labeled reviews in Hindi and English</li>
+                    <li>Balanced dataset across positive, negative, and neutral sentiments</li>
+                    <li>Data augmentation using back-translation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Model Architecture</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Base Models:</strong> mBERT, XLM-RoBERTa, IndicBERT</li>
+                    <li><strong>Fine-tuning:</strong> Custom classification heads for sentiment prediction</li>
+                    <li><strong>Ensemble:</strong> Weighted combination of multiple models</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Performance</h2>
+            <table class="perf-table">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Accuracy</th>
+                        <th>F1-Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>English</td>
+                        <td>91%</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr>
+                        <td>Hindi</td>
+                        <td>87%</td>
+                        <td>0.86</td>
+                    </tr>
+                    <tr>
+                        <td>Mixed (Hinglish)</td>
+                        <td>85%</td>
+                        <td>0.84</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Features</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Multi-label Classification:</strong> Positive, Negative, Neutral, Mixed</li>
+                    <li><strong>Aspect-based Sentiment:</strong> Identify sentiment towards specific product features
+                    </li>
+                    <li><strong>Code-mixing Support:</strong> Handle Hinglish (Hindi-English mixed) text</li>
+                    <li><strong>Real-time API:</strong> FastAPI endpoint for instant predictions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Models:</strong> Transformers (Hugging Face), PyTorch</li>
+                    <li><strong>Preprocessing:</strong> NLTK, IndicNLP</li>
+                    <li><strong>API:</strong> FastAPI, Uvicorn</li>
+                    <li><strong>Deployment:</strong> Docker, AWS Lambda</li>
+                    <li><strong>Monitoring:</strong> Prometheus, Grafana</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Use Cases</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Product review analysis</li>
+                    <li>Social media monitoring</li>
+                    <li>Customer support ticket prioritization</li>
+                    <li>Brand sentiment tracking</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Deployment</h2>
+            <div class="section-content">
+                <p>Deployed as a REST API serving 1000+ requests per day with average latency < 200ms.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

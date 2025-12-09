@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Analysis - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #3b82f6;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .links-section {
+            display: flex;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #fff;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1.5px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+
+        .highlight-box {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            margin: 1.5rem 0;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+            <h1 class="project-title">Customer Churn Analysis</h1>
+            <p class="project-subtitle">ML system to identify and retain at-risk customers</p>
+            <div class="project-tags">
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Ensemble Methods</span>
+                <span class="project-tag">XGBoost</span>
+                <span class="project-tag">FastAPI</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <a href="https://github.com/d0r1h/Churn-Analysis" target="_blank" class="link-button">
+                <span>📂</span> GitHub
+            </a>
+            <a href="https://churn01.herokuapp.com/" target="_blank" class="link-button">
+                <span>🚀</span> Live Demo
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="section-content">
+                <p>Churn prediction, or the task of identifying customers who are likely to discontinue use of a
+                    service, is an important and lucrative concern of any industry.</p>
+                <p>This project predicts the churn score for a website based on features such as:</p>
+                <ul>
+                    <li>User demographic information</li>
+                    <li>Browsing behavior</li>
+                    <li>Historical purchase data among other information</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="../images/churn.png" alt="Customer Churn Analysis Visualization" class="project-image">
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Dataset</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Dataset taken from a Hackathon (<a
+                            href="https://www.hackerearth.com/problem/machine-learning/predict-the-churn-risk-rate-11-fb7a760d/"
+                            target="_blank">Link</a>)</li>
+                    <li>Cleaned and processed version available on <a
+                            href="https://github.com/d0r1h/Churn-Analysis/blob/main/DataSet/churnclean.csv"
+                            target="_blank">GitHub</a></li>
+                    <li>Classes [Customer will EXIT(1) or NOT(0)] are properly balanced with 5:4 ratio</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Models</h2>
+            <div class="section-content">
+                <p>The final model used is an ensemble of different classifiers:</p>
+                <ul>
+                    <li>KNN (K-Nearest Neighbors)</li>
+                    <li>Random Forest</li>
+                    <li>AdaBoost</li>
+                    <li>XGBoost</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Results</h2>
+            <div class="section-content">
+                <div class="highlight-box">
+                    <p><strong>Key Achievement:</strong> Ensemble methods (stack classifier) achieved <strong>94%
+                            recall</strong> for predicting customers who are likely to leave, higher than XGBoost alone.
+                    </p>
+                </div>
+                <ul>
+                    <li>XGBoost achieved ~93% test accuracy</li>
+                    <li>Focus on identifying customers leaving (class 1) to retain them with incentives</li>
+                    <li>Stack ensemble classifier optimized for recall to minimize false negatives</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Python version:</strong> 3.7</li>
+                    <li><strong>Packages:</strong> pandas, numpy, sklearn, xgboost, fastapi, seaborn</li>
+                    <li><strong>Cloud:</strong> Heroku</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

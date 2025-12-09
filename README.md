@@ -1,54 +1,72 @@
-# Pawan Trivedi - Portfolio Website
+# Portfolio Website
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://d0r1h.github.io)
-[![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-red)](https://jekyllrb.com/)
+A modern, responsive portfolio website showcasing AI/ML projects, research work, and technical blog posts.
 
-Personal portfolio website showcasing my work in Machine Learning, Natural Language Processing, and Data Science.
+## 🚀 Quick Start
 
-## 🌐 Live Site
+To run the website locally:
 
-Visit the live website: [https://d0r1h.github.io](https://d0r1h.github.io)
+```bash
+# Navigate to the repository directory
+cd d0r1h.github.io
 
-## 📋 About
+# Start a local development server
+python3 -m http.server 8000
 
-This is my professional portfolio website built with Jekyll and hosted on GitHub Pages. It features:
+# Open your browser and visit
+# http://localhost:8000/
+```
 
-- **Work Experience**: 3+ years in retail analytics and ML
-- **Skills**: Comprehensive technical skills in ML, NLP, and data engineering
-- **Projects**: Portfolio of ML/NLP projects including Hindi text summarization
-- **Publications**: Research work on legal document summarization
-- **Blog**: Technical articles on ML deployment and data science
+## 📁 Project Structure
 
-## 🛠️ Technologies
+```
+.
+├── index.html          # Homepage
+├── blog.html           # Blog listing page
+├── projects.html       # Projects listing page
+├── blog/               # Individual blog posts
+├── projects/           # Individual project pages
+├── css/                # Stylesheets
+└── images/             # Images and assets
+```
 
-- **Framework**: Jekyll (Academic Pages theme)
-- **Hosting**: GitHub Pages
-- **Languages**: HTML, CSS, JavaScript, Markdown
-- **Analytics**: Google Analytics
+## 🎨 Features
 
-## 🚀 Key Features
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Responsive Layout**: Works seamlessly on desktop, tablet, and mobile devices
+- **Blog Section**: Technical articles on ML, DevOps, and software engineering
+- **Project Showcase**: Detailed project pages with code examples and demos
+- **Fast Loading**: Optimized static HTML/CSS/JS for quick page loads
 
-- Responsive design
-- SEO optimized
-- Blog with markdown support
-- Portfolio showcase
-- Publications section
-- CV/Resume page
+## 📝 Content
 
-## 📱 Connect
+### Projects
+- Hindi News Summarizer
+- Customer Churn Analysis
+- SAR Image Classification
+- ILC (Intelligent Learning Companion)
+- And more...
 
-- **GitHub**: [@d0r1h](https://github.com/d0r1h)
-- **Twitter**: [@d0r1h](https://twitter.com/d0r1h)
-- **Kaggle**: [@undersc0re](https://www.kaggle.com/undersc0re)
-- **Hugging Face**: [@d0r1h](https://huggingface.co/d0r1h)
-- **Medium**: [d0r1h.medium.com](https://d0r1h.medium.com)
-- **Email**: 59r@protonmail.com
+### Blog Topics
+- Machine Learning in Agriculture
+- Deploying ML Projects
+- HAProxy & Ansible
+- AI in Healthcare
+- And more...
+
+## 🛠️ Technology Stack
+
+- HTML5
+- CSS3 (with modern features like CSS Grid and Flexbox)
+- Vanilla JavaScript
+- Python (for local development server)
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+See [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## 👤 Author
 
-Built using the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template.
-
+**Pawan Trivedi**
+- AI Researcher & ML Engineer
+- [GitHub](https://github.com/d0r1h)

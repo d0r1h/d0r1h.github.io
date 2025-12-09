@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi News Summarizer - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #3b82f6;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .models-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .models-table th,
+        .models-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .models-table th {
+            background: #f5f5f5;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .models-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .code-block {
+            background: #1a1a1a;
+            color: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .code-block code {
+            color: #f5f5f5;
+        }
+
+        .links-section {
+            display: flex;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #fff;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1.5px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+            <h1 class="project-title">Hindi News Summarizer</h1>
+            <p class="project-subtitle">SAR (सार) - State-of-the-art Summarization for Hindi</p>
+            <div class="project-tags">
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">BART</span>
+                <span class="project-tag">T5</span>
+                <span class="project-tag">Hugging Face</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <a href="https://github.com/d0r1h/SAR" target="_blank" class="link-button">
+                <span>📂</span> GitHub
+            </a>
+            <a href="https://huggingface.co/spaces/d0r1h/Hindi_News_Summarizer" target="_blank" class="link-button">
+                <span>🚀</span> Live Demo
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="section-content">
+                <p>SAR (सार) in Hindi means summary. This is my work on Hindi Text Summarization on news articles using
+                    state-of-the-art transformer models.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="../images/SAR.png" alt="Hindi News Summarizer Interface" class="project-image">
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Models</h2>
+            <div class="section-content">
+                <p>Inference results are on 2k sample data:</p>
+                <table class="models-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Checkpoint</th>
+                            <th>Rouge-2 [f_score]</th>
+                            <th>Inference Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BART</td>
+                            <td><a href="https://huggingface.co/ai4bharat/IndicBART"
+                                    target="_blank">ai4bharat/IndicBART</a></td>
+                            <td>21.48</td>
+                            <td>20min 27s</td>
+                        </tr>
+                        <tr>
+                            <td>T5</td>
+                            <td><a href="https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum"
+                                    target="_blank">csebuetnlp/mT5_multilingual_XLSum</a></td>
+                            <td>20.21</td>
+                            <td>45min 54s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">API Usage</h2>
+            <div class="section-content">
+                <p>You can summarize any Hindi news article in just 5 lines of code:</p>
+                <div class="code-block">
+                    <code><span style="color: #569cd6;">import</span> requests
+
+api_endpoint = <span style="color: #ce9178;">"https://hf.space/embed/d0r1h/Hindi_News_Summarizer/+/api/predict/"</span>
+news_url = <span style="color: #ce9178;">"https://www.amarujala.com/uttar-pradesh/shamli/..."</span>
+
+r = requests.post(url=api_endpoint, json={<span style="color: #ce9178;">"data"</span>: [news_url, <span style="color: #ce9178;">"BART"</span>]})
+<span style="color: #4ec9b0;">print</span>(r.json()[<span style="color: #ce9178;">'data'</span>][<span style="color: #b5cea8;">0</span>])</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

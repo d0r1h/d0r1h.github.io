@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegSum - Legal Documents Summarization - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #3b82f6;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .links-section {
+            display: flex;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #fff;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1.5px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+
+        .models-list {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .models-list h4 {
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+            <h1 class="project-title">LegSum</h1>
+            <p class="project-subtitle">Legal Documents Summarization using Transformers</p>
+            <div class="project-tags">
+                <span class="project-tag">NLP</span>
+                <span class="project-tag">Legal AI</span>
+                <span class="project-tag">Transformers</span>
+                <span class="project-tag">Summarization</span>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <a href="https://github.com/d0r1h/LegSum" target="_blank" class="link-button">
+                <span>📂</span> GitHub
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="section-content">
+                <p>Legal document summarization system using state-of-the-art transformer models. This project explores
+                    both abstractive and extractive methods for summarizing legal bills and documents.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Dataset</h2>
+            <div class="section-content">
+                <p><strong>BillSum</strong> - A dataset of US Congressional and California state bills with summaries
+                </p>
+                <ul>
+                    <li><a href="https://github.com/FiscalNote/BillSum" target="_blank">Official GitHub repository</a>
+                    </li>
+                    <li><a href="https://huggingface.co/datasets/billsum" target="_blank">🤗 Dataset loader</a></li>
+                    <li>Processed and clean version available in the <a
+                            href="https://github.com/d0r1h/LegSum/tree/main/Data" target="_blank">project repository</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Models Evaluated</h2>
+            <div class="section-content">
+                <div class="models-list">
+                    <h4>Abstractive Methods</h4>
+                    <ul>
+                        <li><strong>T5-Small:</strong> Fine-tuned on BillSum</li>
+                        <li><strong>BART:</strong> BillSum variant</li>
+                        <li><strong>DistilBART:</strong> Distilled version for efficiency</li>
+                        <li><strong>Legal-PEGASUS:</strong> Domain-specific PEGASUS model</li>
+                        <li><strong>BigBird-PEGASUS:</strong> For long document processing</li>
+                        <li><strong>LED (Longformer Encoder-Decoder):</strong> Handles documents up to 16,384 tokens
+                        </li>
+                    </ul>
+                </div>
+                <div class="models-list">
+                    <h4>Extractive Methods</h4>
+                    <ul>
+                        <li>Traditional extractive summarization techniques</li>
+                        <li>Sentence ranking and selection algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Results</h2>
+            <div class="section-content">
+                <p>Comprehensive evaluation on BillSum Dataset (ca_test) comparing pre-trained models and extractive
+                    methods. Results demonstrate the effectiveness of transformer-based approaches for legal document
+                    summarization.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Framework:</strong> Hugging Face Transformers</li>
+                    <li><strong>Models:</strong> T5, BART, PEGASUS, LED, BigBird</li>
+                    <li><strong>Language:</strong> Python</li>
+                    <li><strong>Dataset:</strong> BillSum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
