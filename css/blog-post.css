@@ -235,8 +235,33 @@ body {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 3rem 1.5rem;
+    }
+
     .blog-title {
         font-size: 2rem;
+    }
+
+    .blog-content {
+        font-size: 1.05rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        margin-left: 1.5rem;
+    }
+
+    .medium-link {
+        padding: 1.25rem;
     }
 
     .share-buttons {
@@ -245,5 +270,73 @@ body {
 
     .share-button {
         justify-content: center;
+    }
+
+    .recommendations-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .blog-title {
+        font-size: 1.75rem;
+    }
+
+    .blog-content {
+        font-size: 1rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.35rem;
+        margin: 2rem 0 0.75rem 0;
+    }
+
+    .blog-content h3 {
+        font-size: 1.15rem;
+        margin: 1.5rem 0 0.75rem 0;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        margin-left: 1.25rem;
+    }
+
+    .blog-content code {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    .medium-link {
+        padding: 1rem;
+    }
+
+    .medium-link a {
+        padding: 0.7rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .share-title {
+        font-size: 1rem;
+    }
+
+    .share-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .recommendations-title {
+        font-size: 1.35rem;
+    }
+
+    .recommendation-card {
+        padding: 1.25rem;
+    }
+
+    .recommendation-title {
+        font-size: 1.1rem;
     }
 }
