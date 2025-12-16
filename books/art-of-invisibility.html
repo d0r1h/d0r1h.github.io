@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Invisibility - Book Notes - Pawan Trivedi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/blog-post.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../books.html" class="back-link">← Back to Books</a>
+
+        <div class="blog-header">
+            <div class="blog-date">Book Notes</div>
+            <h1 class="blog-title">The Art of Invisibility</h1>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                By Kevin Mitnick
+            </p>
+
+            <div class="blog-tags">
+                <span class="blog-tag">privacy</span>
+                <span class="blog-tag">security</span>
+                <span class="blog-tag">anonymity</span>
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <blockquote
+                style="border-left: 4px solid var(--accent-purple); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--text-secondary);">
+                "Rule number 1 about being invisible: you can't ever link your anonymous online persona with your
+                real-world persona. You just can't."
+            </blockquote>
+
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Protect your data with good password management</li>
+                <li>Hide your true IP address from places you visit</li>
+                <li>Obscure your computer from being tracked</li>
+                <li>Defend your anonymity</li>
+                <li>Encrypt and send secure Email</li>
+            </ul>
+
+            <h2>Programs & Tools</h2>
+            <ul>
+                <li><strong>Immersion</strong> - Created at MIT for email metadata analysis</li>
+                <li><strong>Anonymous remailer</strong> - Mask email's IP address</li>
+                <li><strong>Signal</strong> - VoIP system for mobile phone providing E2E encryption</li>
+                <li><strong><a href="http://benwerd.com/lab/geo.php" target="_blank">Geo Test</a></strong> - Check if
+                    your browser is reporting geo-data</li>
+                <li><strong><a href="https://panopticlick.com" target="_blank">Panopticlick</a></strong> - Check if your
+                    browser is safe against tracking (built by EFF)</li>
+                <li><strong>NoScript</strong> - Add-on blocks everything that can harm your computer/browser (for Chrome
+                    use ScriptBlock)</li>
+                <li><strong>HTTPS Everywhere</strong> - Add-on forces HTTPS connection to encrypted if available</li>
+                <li><strong>CanvasBlocker</strong> - Blocks canvas fingerprinting (for Chrome use
+                    CanvasFingerprintBlock)</li>
+                <li><strong>Adblock Plus</strong> - Ad-removal plugin</li>
+                <li><strong>FOCA [Windows] / Metagoofil [Linux]</strong> - Extract metadata from files (photos, docs)
+                </li>
+                <li><strong><a href="https://www.shodan.io" target="_blank">Shodan</a></strong> - Web search engine
+                    exposing Internet-connected devices</li>
+                <li><strong>KeySweeper</strong> - Intercepts signals sent from keyboard to computer</li>
+                <li><strong>VeraCrypt</strong> - Disk encryption software</li>
+                <li><strong><a href="https://syncstop.com" target="_blank">SyncStop</a></strong> - USB data blocker</li>
+                <li><strong>PGP Whole Disk Encryption</strong> - From Symantec</li>
+                <li><strong>ProxyHam / ProxyGambit</strong> - Hardware proxy devices</li>
+                <li><strong>Google Advanced Search</strong> - For finding exposed devices and information</li>
+            </ul>
+
+            <h2>Key Notes</h2>
+
+            <h3>Messaging & Communication</h3>
+            <p>
+                When downloading any app for text messaging from app store, look for <strong>OTR (Off-The-Record)
+                    messaging</strong>,
+                which is a higher-standard E2E protocol.
+            </p>
+
+            <h3>Private Browsing</h3>
+            <p>
+                Private browsing doesn't create temporary files, and therefore it keeps your browsing history off your
+                laptop or mobile device.
+            </p>
+
+            <h3>Emulate Geolocation Coordinates</h3>
+            <p>
+                While in Chrome, press <code>Ctrl+Shift+I</code> on Windows or <code>Cmd+Option+I</code> on Mac to open
+                the Chrome Developer Tools. The Console window will open, and you can click the three vertical dots at
+                the top right of the Console, then select <strong>More Tools > Sensors</strong>. A sensor tab will open.
+                This allows you to define the exact latitude and longitude you want to share.
+            </p>
+
+            <h3>MAC Address</h3>
+            <p>
+                To stay invisible, the MAC address should be changed each time you connect to the wireless network so
+                your Internet sessions cannot easily be correlated to you.
+            </p>
+
+            <h3>Image Metadata</h3>
+            <p>
+                Certainly the metadata inside your image files can be used to locate you. <strong>EXIF data</strong> in
+                a digital image contains:
+            </p>
+            <ul>
+                <li>The date and time when the picture was snapped</li>
+                <li>The make and model number of the camera</li>
+                <li>Longitude and latitude of the place</li>
+            </ul>
+
+            <h3>Device Tracking</h3>
+            <p>
+                <strong>Accelerometer device</strong> (chip) is responsible for determining the orientation of your
+                device,
+                whether you are holding it in landscape or portrait view. This can be used for fingerprinting.
+            </p>
+
+            <h3>Physical Surveillance</h3>
+            <p>
+                <strong>Automated License Plate Recognition (ALPR)</strong> technology is used by law enforcement to
+                recognize vehicles.
+            </p>
+
+            <h3>IoT Security Risks</h3>
+            <p>
+                An attacker can use Google filters to search for "D-Link Internet cameras." The attacker can then look
+                for the models that default to no authentication, then go to a website such as Shodan, click a link,
+                and view the video streams at his leisure.
+            </p>
+
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.wired.com/2017/12/digital-security-guide/" target="_blank">Wired Digital
+                        Security Guide</a></li>
+                <li><a href="https://www.openwall.com/john/" target="_blank">John the Ripper - Password Cracker</a></li>
+                <li><a href="https://arstechnica.com/information-technology/2015/08/new-data-uncovers-the-surprising-predictability-of-android-lock-patterns/"
+                        target="_blank">Android Lock Pattern Predictability</a></li>
+                <li><a href="https://freedom.press/training/" target="_blank">Freedom of the Press Foundation
+                        Training</a></li>
+                <li><a href="https://otr.cypherpunks.ca/" target="_blank">OTR Messaging</a></li>
+                <li><a href="https://getconfide.com/" target="_blank">Confide - Secure Messaging</a></li>
+                <li><a href="https://browserspy.dk/" target="_blank">BrowserSpy - Browser Information Leak Test</a></li>
+                <li><a href="https://samy.pl/" target="_blank">Samy Kamkar's Projects</a></li>
+                <li><a href="https://zephoria.com/top-15-valuable-facebook-statistics/" target="_blank">Facebook
+                        Statistics</a></li>
+                <li><a href="https://www.routeripaddress.com/" target="_blank">Router IP Address Finder</a></li>
+                <li><a href="https://www.shodan.io" target="_blank">Shodan - IoT Search Engine</a></li>
+                <li><a href="https://www.boxcryptor.com/en/" target="_blank">Boxcryptor - Cloud Encryption</a></li>
+                <li><a href="https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/" target="_blank">The
+                        Intercept - Laptop Encryption Guide</a></li>
+                <li><a href="https://samy.pl/proxygambit/" target="_blank">ProxyGambit</a></li>
+                <li><a href="https://hackaday.com/tag/proxyham/" target="_blank">ProxyHam on Hackaday</a></li>
+                <li><a href="https://www.bitrefill.com/" target="_blank">Bitrefill - Anonymous Purchases</a></li>
+                <li><a href="https://panopticlick.eff.org/" target="_blank">Panopticlick - Browser Fingerprinting
+                        Test</a></li>
+            </ul>
+
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>Never link your anonymous online persona with your real-world identity</li>
+                <li>Use end-to-end encryption for all communications (Signal, OTR messaging)</li>
+                <li>Remove metadata from files before sharing (EXIF data from photos)</li>
+                <li>Change your MAC address regularly when connecting to networks</li>
+                <li>Use browser extensions to block tracking (NoScript, HTTPS Everywhere, CanvasBlocker)</li>
+                <li>Be aware of IoT device vulnerabilities and default credentials</li>
+                <li>Understand that even seemingly innocuous data (accelerometer, geolocation) can be used for tracking
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
